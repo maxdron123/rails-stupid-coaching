@@ -13,3 +13,6 @@
  *= require_tree .
  *= require_self
  */
+form .col-auto .btn {
+  margin-left: auto;
+}

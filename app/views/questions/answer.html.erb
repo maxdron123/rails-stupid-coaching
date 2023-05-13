@@ -1,0 +1,16 @@
+<h1>Stupid coaching</h1>
+<%@answer = params[:question] %>
+<%= @answer %> <br> <%= "- You" %> <br>
+
+
+<% @coach =""
+if @answer.ends_with?("?")
+@coach = "Silly question, get dressed and go to work!"
+elsif @answer == "I am going to work"
+@coach = "Great!"
+else
+@coach = "I don't care, get dressed and go to work!"
+end  %>
+<%= @coach %> <br> <%= - " - Coach" %> <br>
+
+<a class="btn btn-success" href="/ask" role="button">Ask a new question</a>
